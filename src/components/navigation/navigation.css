@@ -2,6 +2,8 @@ h1 {
     color: #ffff;
     font-size: 1.5rem;
     padding: 1rem;
+    letter-spacing: -.05rem;
+    font-weight: bold;
 }
 
 ul {
@@ -9,16 +11,14 @@ ul {
     color: #ffff;
     font-variant: small-caps;
     font-size: 3.5rem;
-    font-weight: 100;
+    font-weight: 300;
     list-style-type: none;
-    text-align: center;
-    justify-content: center;
-    vertical-align: middle;
+    justify-content: space-between;
 }
 
 li {
-    margin-left: 2.5rem;
-    display: inline;
+    text-align: center;
+    width:15rem;
 }
 
 a {
@@ -28,5 +28,12 @@ a {
 }
 
 a:hover {
-    font-size: 3.8rem;
+    transform: scale(1.1);
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -5,11 +5,13 @@ function navigation() {
     return (
         <>
         <h1>Bradley Vangelder</h1>
-        <ul>
-            <li><a href="/#">About</a></li>
-            <li><a href="/#">Contact</a></li>
-            <li><a href="/#">Resume</a></li>
-        </ul>
+        <div className="nav">
+            <ul>
+                <li><a href="/#">about</a></li>
+                <li><a href="/#">contact</a></li>
+                <li><a href="/#">resume</a></li>
+            </ul>
+        </div>
         </>
     )
 }
