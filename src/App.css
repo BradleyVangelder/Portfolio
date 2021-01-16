@@ -6,4 +6,163 @@
 body {
   background-color: #282c34;
   height: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  color: #ffff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  letter-spacing: -.05rem;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  color: #ffff;
+  font-variant: small-caps;
+  font-size: 3.5rem;
+  font-weight: 300;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+li {
+  text-align: center;
+  width:15rem;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: nav;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.nav_name {
+  animation-name: nav;
+  animation-delay: 1.5s;
+  animation-duration: .8s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  width: 30%;
+}
+
+.animation_text {
+  color: #ffff;
+  font-size: 3rem;
+  letter-spacing: -.1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  opacity: 0%;
+}
+
+.animation {
+  animation-name: animation;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}
+
+.slide_left {
+  animation-name: slide_left;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.none {
+  display: none;
+}
+
+.slide_left_container {
+  animation-name: slide_left_container;
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+@keyframes animation {
+  0% {
+    letter-spacing: 5rem;
+    opacity: 100%;
+  }
+  50% {
+    letter-spacing: 0;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slide_left {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity:0;
+    transform: translateX(-5rem);
+  }
+}
+
+@keyframes slide_left_container {
+  0%{
+    opacity: 100%;
+    transform: translateX(5rem);
+    display: block;
+  }
+  100%{
+    opacity:0;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide_back {
+  100%{
+    opacity:100%;
+    margin-right: 0;
+  }
 }
