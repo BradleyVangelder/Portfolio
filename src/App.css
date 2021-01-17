@@ -182,12 +182,58 @@ li:hover {
   z-index: 5;
 }
 
-.container h2 {
+.container h3 {
   position: absolute;
+  color: rgb(10, 3, 43,0);
   font-family: 'Playfair Display', serif;
   font-weight: 800;
+  font-size: 3rem;
   top: -10%;
   left: -5%;
+  animation-name: slide_left_container;
+  animation-duration: .8s;
+  animation-delay: .8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.container p {
+  margin-top: 3rem;
+  display: block;
+  max-width: 65%;
+}
+
+.container img {
+  position: absolute;
+  right: -20%;
+  max-width: 50%;
+  bottom: -50%;
+  opacity: 0;
+  animation-name: slide_left_picture;
+  animation-duration: .8s;
+  animation-delay: .8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.container .back {
+  color: rgb(10, 3, 43,1);
+  display: inline-block;
+  background-color: #f67e7d;
+  padding: .5rem 2rem .5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
+  animation-name: slide_left_picture;
+  animation-duration: .8s;
+  animation-delay: .8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.container .back:hover {
+  transform: scale(1.1);
 }
 
 .animation_text {
@@ -278,14 +324,26 @@ li:hover {
 
 @keyframes slide_left_container {
   0%{
-    background-color: rgba(235, 235, 235, 0);
-    color: rgba(0, 0, 0, 0);
+    right: -20%;
+    color: rgb(10, 3, 43,0);
   }
   100%{
-    background-color: rgba(235, 235, 235, 1);
-    color: rgba(0, 0, 0, 1);
+    right: 0%;
+    color: rgb(10, 3, 43,1);
   }
 }
+
+@keyframes slide_left_picture {
+  0%{
+    opacity: 0;
+    right: -30%;
+  }
+  100%{
+    opacity: 100%;
+    right: -20%;
+  }
+}
+
 
 @keyframes slide_back {
   100%{

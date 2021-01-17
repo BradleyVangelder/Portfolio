@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import me from './pictures/me.jpg';
 
 function App() {
 
@@ -29,8 +30,14 @@ function App() {
       </div>
 
       <div className={show === 'about' ? 'slide_left_container container': 'none'}>
-        <h2>About</h2>
-        <p>Wat text eh boykes</p>
+        <h3>About</h3>
+        <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. In my free time i like to workout, play guitar, level my self up in graphic design and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
+        <img src={me}/>
+        <p className="back" onClick={() => setShow('close')}>
+          <span class="material-icons">
+            west
+          </span>
+        </p>
       </div>
     </header>
   );
