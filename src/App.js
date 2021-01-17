@@ -14,7 +14,7 @@ function App() {
       </video>
 
       <h1 className="animation_text animation">Bradley Vangelder</h1>
-
+      
       <h1 className="nav_name">Bradley Vangelder</h1>
 
       <div className="nav">

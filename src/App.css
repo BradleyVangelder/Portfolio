@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: rgba(255, 255, 255, 0);
   font-size: 1.5rem;
   padding: 1rem;
   letter-spacing: -.12rem;
@@ -17,23 +17,21 @@ h1 {
 }
 
 ul {
-  z-index: 2;
+  color: rgba(255, 255, 255, 0);
   display: flex;
-  color: white;
   font-variant: small-caps;
   font-size: 3.5rem;
   font-weight: 300;
   list-style-type: none;
-  justify-content: space-between;
 }
 
 li {
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   width:15rem;
 }
 
 a {
-  color: #ffff;
   text-decoration: none;
   transition: all 0.5s;
 }
@@ -43,6 +41,7 @@ a:hover {
 }
 
 .nav {
+  color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,7 +49,6 @@ a:hover {
   animation-name: nav;
   animation-delay: 2.2s;
   animation-duration: 1s;
-  opacity: 0;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
@@ -61,7 +59,7 @@ a:hover {
   animation-duration: .8s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-  opacity: 0;
+  color: rgba(255, 255, 255, 0);
 }
 
 .container {
@@ -69,14 +67,15 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0);
   padding: 1rem;
   width: 30%;
   height: 25%;
 }
 
 .animation_text {
-  color: #ffff;
+  color: rgba(255, 255, 255, 0);
   font-size: 3rem;
   letter-spacing: -.1rem;
   font-weight: bold;
@@ -86,7 +85,6 @@ a:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  opacity: 0%;
 }
 
 .animation {
@@ -123,55 +121,58 @@ a:hover {
   animation-delay: .8s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0);
 }
 
 @keyframes animation {
   0% {
     letter-spacing: 5rem;
-    opacity: 100%;
+    color: rgba(255, 255, 255, 1);
   }
   50% {
     letter-spacing: 0;
   }
   75% {
-    opacity: 100%;
+    color: rgba(255, 255, 255, 1);
   }
   100% {
-    opacity: 0;
+    color: rgba(255, 255, 255, 0);
   }
 }
 
 @keyframes nav {
   0% {
-    opacity: 0;
+    color: rgba(255, 255, 255, 0);
   }
   100% {
-    opacity: 100%;
+    color: rgba(255, 255, 255, 1);
   }
 }
 
 @keyframes slide_left {
   0%{
-    opacity: 100%;
+    color: rgba(255, 255, 255, 1);
   }
   100%{
-    opacity:0;
+    color: rgba(255, 255, 255, 0);
     transform: translateX(-5rem);
   }
 }
 
 @keyframes slide_left_container {
   0%{
-    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0);
   }
   100%{
-    opacity: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
   }
 }
 
 @keyframes slide_back {
   100%{
-    opacity:100%;
+    color: rgba(255, 255, 255, 1);
   }
 }
