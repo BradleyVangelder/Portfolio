@@ -4,22 +4,21 @@
 }
 
 body {
-  background-color: #282c34;
   height: 100%;
   max-width: 100%;
 }
 
 h1 {
-  color: #ffff;
+  color: white;
   font-size: 1.5rem;
   padding: 1rem;
-  letter-spacing: -.05rem;
+  letter-spacing: -.12rem;
   font-weight: bold;
 }
 
 ul {
   display: flex;
-  color: #ffff;
+  color: white;
   font-variant: small-caps;
   font-size: 3.5rem;
   font-weight: 300;
@@ -48,7 +47,7 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: nav;
-  animation-delay: 2s;
+  animation-delay: 2.2s;
   animation-duration: 1s;
   opacity: 0;
   animation-timing-function: ease-in;
@@ -57,7 +56,7 @@ a:hover {
 
 .nav_name {
   animation-name: nav;
-  animation-delay: 1.5s;
+  animation-delay: 1.7s;
   animation-duration: .8s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
@@ -72,6 +71,7 @@ a:hover {
   background-color: #fff;
   padding: 1rem;
   width: 30%;
+  height: 25%;
 }
 
 .animation_text {
@@ -90,6 +90,7 @@ a:hover {
 
 .animation {
   animation-name: animation;
+  animation-delay: .5s;
   animation-duration: 1.2s;
   animation-timing-function: ease-out;
 }
@@ -105,12 +106,23 @@ a:hover {
   display: none;
 }
 
+#videoBG {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+}
+
 .slide_left_container {
   animation-name: slide_left_container;
   animation-duration: .8s;
+  animation-delay: .8s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  display: none;
+  opacity: 0;
 }
 
 @keyframes animation {
@@ -150,19 +162,15 @@ a:hover {
 
 @keyframes slide_left_container {
   0%{
-    opacity: 100%;
-    transform: translateX(5rem);
-    display: block;
+    opacity: 0;
   }
   100%{
-    opacity:0;
-    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
 @keyframes slide_back {
   100%{
     opacity:100%;
-    margin-right: 0;
   }
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import sea from "./resources/sea.mp4";
 
 function App() {
 
@@ -7,8 +8,12 @@ function App() {
 
   return (
     <>
-      <h1 className="animation_text animation">Bradley Vangelder</h1>
 
+      <video autoPlay loop muted id="videoBG">
+        <source src={sea} type="video/mp4"/>
+      </video>
+
+      <h1 className="animation_text animation">Bradley Vangelder</h1>
 
       <h1 className="nav_name">Bradley Vangelder</h1>
 
