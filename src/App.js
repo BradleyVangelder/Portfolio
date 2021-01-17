@@ -10,7 +10,7 @@ function App() {
       <h2 className="nav_name">Bradley Vangelder.</h2>
 
       <div className="lines">
-        <p className="loop_text">driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player</p>
+        <p className="loop_text">driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player</p>
         <div className="invis_right"></div>
         <div className="invis_left"></div>
       </div>

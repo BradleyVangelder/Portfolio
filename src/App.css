@@ -10,11 +10,17 @@ body {
 
 .lines{
   margin-top: 1rem;
-  border-top: .1rem solid #000;
-  border-bottom: .1rem solid #000;
+  border-top: .1rem solid rgb(10, 3, 43,0);
+  border-bottom: .1rem solid rgb(10, 3, 43,0);
+  color: rgba(117, 49, 85, 0);
+  width: 100%;
   text-align: center;
   position: relative;
   padding: 1.5rem 0 1.5rem 0;
+  animation-name: slide_words;
+  animation-delay: 3.5s;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
 
 .overlap {
@@ -138,24 +144,25 @@ li:hover {
   transform: scale(1.1);
 }
 
-.nav {
+.nav{
   color: rgb(10, 3, 43,0);
   z-index: 100;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation-name: nav;
+  animation-name: slide;
   animation-delay: 2.2s;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+  max-width: 100%;
 }
 
 .nav_name {
   color: rgb(10, 3, 43,0);
   letter-spacing: -.15;
-  animation-name: nav;
+  animation-name: slide;
   animation-delay: 1.7s;
   animation-duration: .8s;
   animation-timing-function: ease-in;
@@ -167,11 +174,20 @@ li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(235, 235, 235, 0);
   color: rgb(10, 3, 43,0);
   padding: 1rem;
   width: 30%;
   height: 25%;
+  z-index: 5;
+}
+
+.container h2 {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  top: -10%;
+  left: -5%;
 }
 
 .animation_text {
@@ -228,7 +244,20 @@ li:hover {
   }
 }
 
-@keyframes nav {
+@keyframes slide_words {
+  0% {
+    color: rgb(10, 3, 43,0);
+    border-top: .1rem solid rgb(10, 3, 43,0);
+    border-bottom: .1rem solid rgb(10, 3, 43,0);
+  }
+  100% {
+    color: rgb(10, 3, 43,1);
+    border-top: .1rem solid rgb(10, 3, 43,1);
+    border-bottom: .1rem solid rgb(10, 3, 43,1);
+  }
+}
+
+@keyframes slide {
   0% {
     color: rgb(10, 3, 43,0);
   }
@@ -249,11 +278,11 @@ li:hover {
 
 @keyframes slide_left_container {
   0%{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(235, 235, 235, 0);
     color: rgba(0, 0, 0, 0);
   }
   100%{
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(235, 235, 235, 1);
     color: rgba(0, 0, 0, 1);
   }
 }
@@ -288,9 +317,9 @@ li:hover {
 
 @keyframes words {
   from {
-    left: -75.4%;
+    left: -38%;
   }
   to {
-    left: -149.4%;
+    left: -112.4%;
   }
 }
