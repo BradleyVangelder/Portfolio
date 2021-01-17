@@ -7,9 +7,17 @@ function App() {
 
   return (
     <header className="website">
-      <h1 className="animation_text animation">Bradley Vangelder</h1>
+      <h2 className="nav_name">Bradley Vangelder.</h2>
 
-      <h2 className="nav_name">Bradley Vangelder</h2>
+      <div className="lines">
+        <p className="loop_text">driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player driven / young / eventuous / fullstack developer / student / go-getter / think outside the box / value add / team player</p>
+        <div className="invis_right"></div>
+        <div className="invis_left"></div>
+      </div>
+
+      <h2 className="background_text">Fullstack -</h2>
+      <h2 className="background_text_2">developer</h2>
+      <h1 className="animation_text animation">Bradley Vangelder</h1>
 
       <div className="nav">
           <ul className={show !== 'close' ? 'slide_left' : 'slide_back'}>
