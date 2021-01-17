@@ -17,6 +17,7 @@ h1 {
 }
 
 ul {
+  z-index: 2;
   display: flex;
   color: white;
   font-variant: small-caps;
