@@ -9,10 +9,6 @@ function App() {
   return (
     <>
 
-      <video autoPlay loop muted id="videoBG">
-        <source src={sea} type="video/mp4"/>
-      </video>
-
       <h1 className="animation_text animation">Bradley Vangelder</h1>
 
       <h1 className="nav_name">Bradley Vangelder</h1>
@@ -30,6 +26,10 @@ function App() {
         <h2>About</h2>
         <p>Wat text eh boykes</p>
       </div>
+
+      <video autoPlay loop muted id="videoBG">
+        <source src={sea} type="video/mp4"/>
+      </video>
     </>
   );
 }
