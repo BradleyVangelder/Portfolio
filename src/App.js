@@ -32,7 +32,7 @@ function App() {
       <div className={show === 'about' ? 'slide_left_container container': 'none'}>
         <h3>About</h3>
         <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. In my free time i like to workout, play guitar, level my self up in graphic design and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
-        <img src={me}/>
+        <img src={me} alt=""/>
         <p className="back" onClick={() => setShow('close')}>
           <span class="material-icons">
             west
