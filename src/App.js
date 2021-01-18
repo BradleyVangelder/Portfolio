@@ -1,14 +1,25 @@
 import React, {useState} from 'react';
-import './App.css';
+import './App.scss';
 import me from './pictures/me.jpg';
 
 function App() {
 
   const [show, setShow] = useState('close');
+  const [night, setNight] = useState('no');
 
   return (
-    <header className="website">
-      <h2 className="nav_name">Bradley Vangelder.</h2>
+    <div className={night === 'yes' ? 'App dark_theme': 'App light_theme'}>
+      <div className="nav_top">
+        <h2 className="nav_name" onClick={() => setShow('close')}>Bradley Vangelder.</h2>
+        <i 
+        className={night === 'no' ?'far fa-moon nightmode': 'fas fa-moon nightmode'}
+        onClick={() => night === 'yes' ? setNight('no') : setNight('yes')}
+        >
+          <span>
+            {night === 'yes' ? 'Turn night mode off' : 'Turn night mode on'}
+          </span>
+          </i>
+      </div>
 
       <div className="lines">
         <p className="loop_text">driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player</p>
@@ -18,7 +29,7 @@ function App() {
 
       <h2 className="background_text">Fullstack -</h2>
       <h2 className="background_text_2">developer</h2>
-      <h1 className="animation_text animation">Bradley Vangelder</h1>
+      <h1 className="animation_text">Bradley Vangelder</h1>
 
       <div className="nav">
           <ul className={show !== 'close' ? 'slide_left' : 'slide_back'}>
@@ -34,12 +45,30 @@ function App() {
         <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. In my free time i like to workout, play guitar, level my self up in graphic design and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
         <img src={me} alt=""/>
         <p className="back" onClick={() => setShow('close')}>
+          <span className="material-icons">
+            west
+          </span>
+        </p>
+      </div>
+
+      <div className={show === 'contact' ? 'slide_left_container container': 'none'}>
+        <h3>Contact</h3>
+        <p>I'm open for some new experiences and projects to work on for a client. I'm active on different social media platforms so if you wanna contact me you should defenately try one of these.
+          <p className="icons">
+            <a href="https://twitter.com/BradleyCreation" class="fab fa-twitter" target="blank"></a>
+            <a href="https://www.instagram.com/bradleyvangelder/" class="fab fa-instagram" target="blank"></a>
+            <a href="https://github.com/BradleyVangelder" class="fab fa-github" target="blank"></a>
+          </p>
+        </p>
+
+        <p className="back" onClick={() => setShow('close')}>
           <span class="material-icons">
             west
           </span>
         </p>
       </div>
-    </header>
+      <footer className="footer">© Bradley Vangelder</footer>
+    </div>
   );
 }
 
