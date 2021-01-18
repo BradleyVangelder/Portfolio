@@ -326,28 +326,6 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     color: $dark-text-none !important;
   }
   
-  @keyframes slide_words {
-    0% {
-      color: $dark-text-none !important;
-      border-top: .1rem solid $dark-text-none !important;
-      border-bottom: .1rem solid $dark-text-none !important;
-    }
-    100% {
-      color: $dark-text-fill !important;
-      border-top: .1rem solid $dark-text-fill !important;
-      border-bottom: .1rem solid $dark-text-fill !important;
-    }
-  }
-  
-  @keyframes slide {
-    0% {
-      color: $dark-text-none !important;
-    }
-    100% {
-      color: $dark-text-fill !important;
-    }
-  }
-  
   @keyframes slide_left {
     0%{
       color: $dark-text-fill !important;
@@ -355,64 +333,6 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     100%{
       color: $dark-text-none !important;
       transform: translateX(-5rem);
-    }
-  }
-  
-  @keyframes slide_left_container {
-    0%{
-      right: -20%;
-      color: $dark-text-none !important;
-    }
-    100%{
-      right: 0%;
-      color: $dark-text-fill !important;
-    }
-  }
-  
-  @keyframes slide_left_picture {
-    0%{
-      opacity: 0;
-      right: -30%;
-    }
-    100%{
-      opacity: 100%;
-      right: -20%;
-    }
-  }
-  
-  
-  @keyframes slide_left_button {
-    0%{
-      color: $dark-text-none !important;
-      background-color: $dark-button-fill !important;
-      right: -30%;
-    }
-    100%{
-      color: $dark-text-fill !important;
-      background-color: $dark-button-fill !important;
-      right: -20%;
-    }
-  }
-  
-  @keyframes bg_text_1 {
-    from {
-      left: -20%;
-      color: $dark-bg-text-fill !important;
-    }
-    to {
-      left: -5.6%;
-      color: $dark-bg-text-fill !important;
-    }
-  }
-  
-  @keyframes bg_text_2 {
-    from {
-      left: 30%;
-      color: $dark-bg-text-fill !important;
-    }
-    to {
-      left: 15%;
-      color: $dark-bg-text-fill !important;
     }
   }
   
