@@ -352,16 +352,19 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   
     .container {
       width: 90%;
+      color: $dark-text-fill !important;
     }
   
     .container h3 {
       position: relative;
       top: 0;
       left: 0;
+      color: $dark-text-fill !important;
     }
   
     .container p {
       max-width: 90%;
+      color: $dark-text-fill !important;
     }
   
     .container img {
