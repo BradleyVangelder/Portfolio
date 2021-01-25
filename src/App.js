@@ -5,20 +5,11 @@ import me from './pictures/me.jpg';
 function App() {
 
   const [show, setShow] = useState('close');
-  const [night, setNight] = useState('no');
 
   return (
-    <div className={night === 'yes' ? 'App dark_theme': 'App light_theme'}>
+    <div className="App">
       <div className="nav_top">
         <h2 className="nav_name" onClick={() => setShow('close')}>Bradley Vangelder.</h2>
-        <i 
-        className={night === 'no' ?'far fa-moon nightmode': 'fas fa-moon nightmode'}
-        onClick={() => night === 'yes' ? setNight('no') : setNight('yes')}
-        >
-          <span>
-            {night === 'yes' ? 'Turn night mode off' : 'Turn night mode on'}
-          </span>
-          </i>
       </div>
 
       <div className="lines">
