@@ -92,9 +92,8 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     font-weight: 800;
     word-spacing: 1.2rem;
     position: absolute; 
-    top: 50%;
+    bottom: 25%;
     transform: translate(0, -50%);
-    width: 250%;
     animation-name: words;
     animation-timing-function: linear;
     animation-duration: 20s;
@@ -365,10 +364,12 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   @keyframes slide_left {
     0%{
       color: rgba(10, 3, 43,1);
+      display: none;
     }
     100%{
       color: rgba(10, 3, 43,0);
       transform: translateX(-5rem);
+      visibility: hidden;
     }
   }
   
@@ -432,10 +433,10 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   
   @keyframes words {
     from {
-      left: -38%;
+      transform: translateX(+120%);
     }
     to {
-      left: -112.4%;
+      transform: translateX(-100%);
     }
   }
   

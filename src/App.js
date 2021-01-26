@@ -13,7 +13,7 @@ function App() {
       </div>
 
       <div className="lines">
-        <p className="loop_text">driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player</p>
+        <p className="loop_text">driven / motivated / creative / fullstack developer / synergy / go-getter / think outside the box / value add / team player</p>
         <div className="invis_right"></div>
         <div className="invis_left"></div>
       </div>
