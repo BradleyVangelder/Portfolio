@@ -15,9 +15,9 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   font-family: 'Open Sans', sans-serif;
   background-color: #ffb997;
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -217,7 +217,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     color: rgba(10, 3, 43,0);
     padding: 1rem;
     width: 50%;
-    height: 25%;
+    height: 100%;
     z-index: 5;
     margin-top: 2rem;
   }
@@ -481,6 +481,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   
     .container_modal {
       width: 90%;
+      height: 100%;
     }
   
     .container_modal h3 {
@@ -507,5 +508,11 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
 
     .footer {
       display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container_modal {
+      height: 100%;
     }
   }
