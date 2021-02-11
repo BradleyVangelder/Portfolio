@@ -91,7 +91,7 @@ function App() {
                 <p>LUANA LOUNGE
                 graphic design: company branding | 2019</p>
                 <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.</p>
-                <p><a to="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a></p>
+                <p><a href="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a></p>
                 <p>SNACK BAR FRITZ Studentjob</p>
                 <p className="short_description">For my student job I work at least 3 times during the week combined with the school work that comes with it. I work in the hospitality industry so I am among people a lot, which also makes me social and that I can deal well with people/customers. In this I learn that I have to be friendly at all times and I am faced with a lot of time pressure in this profession.</p>
               </div>
