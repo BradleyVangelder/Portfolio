@@ -35,6 +35,8 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     animation-duration: .8s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    background-color: #ffb997;
+    width: 100%;
   }
   
   h2 {
@@ -186,19 +188,20 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
 
   .resume {
-    width: 100% !important;
     transform: translate(0, 0) !important;
+    overflow: hidden !important;
+    width: 100% !important;
 
     .title_resume {
       font-weight: bold;
       display: block;
-      font-size: 1.2rem;
-      margin-top: 3rem !important;
+      font-size: 1rem;
+      margin-top: 1rem !important;
     }
 
     p {
       max-width: 100% !important;
-      margin-top: 1.3rem !important;
+      margin-top: .7rem !important;
     }
 
     .short_description {
@@ -209,15 +212,14 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
   
   .container_modal {
-    overflow-x: visible;
+    width: 50%;
+    max-width: 100%;
     display: block;
     position: relative;
     transform: translate(0, 50%);
     background-color: rgba(235, 235, 235, 0);
     color: rgba(10, 3, 43,0);
     padding: 1rem;
-    width: 50%;
-    height: 100vh;
     z-index: 5;
     margin-top: 2rem;
   }
@@ -227,7 +229,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     color: rgba(10, 3, 43,0);
     font-family: 'Playfair Display', serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2.5rem;
     left: -3%;
     animation-name: slide_left_container;
     animation-duration: .8s;
@@ -237,10 +239,24 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
   
   .container_modal p {
-    margin-top: 1rem;
+    margin-top: .7rem;
     display: block;
     max-width: 65%;
     margin-bottom: 0;
+  }
+
+  .container_modal a {
+    margin-top: .2rem;
+    max-width: 65%;
+    margin-bottom: 0; 
+    font-size: .8rem;
+    text-decoration: underline;
+    color: rgba(10, 3, 43,0);
+    animation-name: slide_left_container;
+    animation-duration: .8s;
+    animation-delay: .8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
   }
   
   .container_modal img {
@@ -481,13 +497,12 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     }
 
     .resume-height {
-      overflow: scroll !important;
-      height: 100vh;
+      overflow-y: scroll;
+      height: 100vh !important;
     }
   
     .container_modal {
       margin-bottom: 2rem;
-      overflow: scroll !important;
       height: auto;
       width: 90%;
     }
