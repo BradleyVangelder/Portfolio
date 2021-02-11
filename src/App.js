@@ -50,15 +50,15 @@ function App() {
           <h3>Contact</h3>
           <p>I'm open for some new experiences and projects to work on for a client. I'm active on different social media platforms so if you wanna contact me you should defenately try one of these.
             <p className="icons">
-              <a href="https://twitter.com/BradleyCreation" target={"_blank"} rel={"noreferrer"}>
+              <a href="https://twitter.com/BradleyCreation" target="blank">
               <i
               class="fab fa-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/bradleyvangelder/" target={"_blank"} rel={"noreferrer"}>
+              <a href="https://www.instagram.com/bradleyvangelder/" target="blank">
                 <i
                 class="fab fa-instagram"></i>
               </a>
-              <a href="https://github.com/BradleyVangelder" target={"_blank"} rel={"noreferrer"}>
+              <a href="https://github.com/BradleyVangelder" target="blank">
                 <i
                 class="fab fa-github"></i>
               </a>
