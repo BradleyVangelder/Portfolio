@@ -50,7 +50,7 @@ function App() {
           <h3>Contact</h3>
           <p>I'm open for some new experiences and projects to work on for a client. I'm active on different social media platforms so if you wanna contact me you should defenately try one of these.</p>
 
-          <p className="icons">
+          <div className="icons mt-2">
               <a href="https://twitter.com/BradleyCreation" target="blank">
               <i
               class="fab fa-twitter"></i>
@@ -63,7 +63,7 @@ function App() {
                 <i
                 class="fab fa-github"></i>
               </a>
-          </p>
+          </div>
 
           <p className="back" onClick={() => setShow('close')}>
             <span class="material-icons">
