@@ -48,8 +48,9 @@ function App() {
 
         <div className={show === 'contact' ? 'slide_left_container container_modal container': 'none'}>
           <h3>Contact</h3>
-          <p>I'm open for some new experiences and projects to work on for a client. I'm active on different social media platforms so if you wanna contact me you should defenately try one of these.
-            <p className="icons">
+          <p>I'm open for some new experiences and projects to work on for a client. I'm active on different social media platforms so if you wanna contact me you should defenately try one of these.</p>
+
+          <p className="icons">
               <a href="https://twitter.com/BradleyCreation" target="blank">
               <i
               class="fab fa-twitter"></i>
@@ -62,7 +63,6 @@ function App() {
                 <i
                 class="fab fa-github"></i>
               </a>
-            </p>
           </p>
 
           <p className="back" onClick={() => setShow('close')}>
@@ -91,7 +91,7 @@ function App() {
                 <p>LUANA LOUNGE
                 graphic design: company branding | 2019</p>
                 <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.</p>
-                <p><a href="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a></p>
+                <a href="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a>
                 <p>SNACK BAR FRITZ Studentjob</p>
                 <p className="short_description">For my student job I work at least 3 times during the week combined with the school work that comes with it. I work in the hospitality industry so I am among people a lot, which also makes me social and that I can deal well with people/customers. In this I learn that I have to be friendly at all times and I am faced with a lot of time pressure in this profession.</p>
               </div>
