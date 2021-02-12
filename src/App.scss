@@ -285,6 +285,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     background-color: rgba(246, 126, 125,0);
     color: rgba(10, 3, 43,0);
     padding: .5rem 2rem .5rem 2rem;
+    margin-top: 1.3rem;
     border-radius: 1rem;
     cursor: pointer;
     bottom: 0;
@@ -298,15 +299,13 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
   
   .container_modal .icons {
+    margin-top: 2rem;
     width: 60%;
   }
   
   .container_modal .icons .fab {
     width: 20%;
-    justify-content: space-between;
     font-size: 1.4rem;
-    margin-top: 0;
-    text-decoration: none;
     color: rgba(10, 3, 43,0);
     animation-name: slide_left_container;
     animation-duration: .8s;
@@ -317,6 +316,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   
   .container_modal .back:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
   
   .animation_text {
