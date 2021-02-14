@@ -231,6 +231,7 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     background-color: rgba(235, 235, 235, 0);
     color: rgba(10, 3, 43,0);
     padding: 1rem;
+    z-index: 5;
   }
   
   .container_modal h3 {
@@ -252,6 +253,21 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     display: block;
     max-width: 65%;
     height: auto;
+    z-index: 6;
+  }
+
+  .container_modal img {
+    position: absolute;
+    right: -20%;
+    max-width: 75%;
+    bottom: -50%;
+    z-index: 1;
+    visibility: hidden;
+    animation-name: slide_left_picture;
+    animation-duration: .8s;
+    animation-delay: .8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
   }
   
   .container_modal .back {
