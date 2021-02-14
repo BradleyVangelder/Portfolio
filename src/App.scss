@@ -197,37 +197,40 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   .resume {
     transform: translate(0, 0) !important;
     width: 100% !important;
+    overflow: visible !important;
 
     .title_resume {
       font-weight: bold;
-      display: block;
       font-size: 1rem;
-      margin-top: 1rem !important;
+      display: block;
     }
 
     p {
-      max-width: 100% !important;
-      margin-top: .7rem !important;
+      max-width: 80% !important;
+      display: block;
     }
 
     .short_description {
       font-style: italic;
-      margin-top: 1rem;
       font-size: .7rem;
+    }
+
+    a {
+      z-index: 1000000;
+      font-size: .8rem !important;
+      text-decoration: underline;
+      color: rgba(10, 3, 43,0);
     }
   }
   
   .container_modal {
     width: 50%;
     max-width: 100%;
-    display: block;
     position: relative;
     transform: translate(0, 50%);
     background-color: rgba(235, 235, 235, 0);
     color: rgba(10, 3, 43,0);
     padding: 1rem;
-    z-index: 5;
-    margin-top: 2rem;
   }
   
   .container_modal h3 {
@@ -245,39 +248,10 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
   
   .container_modal p {
-    margin-top: .7rem;
+    position: relative;
     display: block;
     max-width: 65%;
-    margin-bottom: 0;
-  }
-
-  .container_modal a {
-    margin-top: .2rem;
-    max-width: 65%;
-    margin-bottom: 0; 
-    font-size: .8rem;
-    cursor: pointer;
-    text-decoration: underline;
-    color: rgba(10, 3, 43,0);
-    animation-name: slide_left_container;
-    animation-duration: .8s;
-    animation-delay: .8s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  }
-  
-  .container_modal img {
-    position: absolute;
-    right: -20%;
-    max-width: 50%;
-    bottom: -50%;
-    opacity: 0;
-    animation-name: slide_left_picture;
-    animation-duration: .8s;
-    animation-delay: .8s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    display: none;
+    height: auto;
   }
   
   .container_modal .back {
@@ -297,15 +271,23 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  
-  .container_modal .icons {
-    margin-top: 2rem;
-    width: 60%;
+
+  .text {
+    z-index: 120;
   }
   
-  .container_modal .icons .fab {
+  .container_modal .icons {
+    position: relative;
+    margin-top: 2rem;
+    width: 60%;
+    z-index: 10000;
+  }
+  
+  .container_modal a {
+    z-index: 12;
     width: 20%;
     font-size: 1.4rem;
+    margin-right: 1.2rem;
     color: rgba(10, 3, 43,0);
     animation-name: slide_left_container;
     animation-duration: .8s;
@@ -363,9 +345,9 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   }
 
   .resume-height {
-    height: 100%;
-    padding: 1rem;
-    overflow: auto;
+    height: 100vh;
+    overflow: visible;
+    position: relative;
   }
   
   @keyframes animation {
@@ -425,10 +407,12 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
   
   @keyframes slide_left_container {
     0%{
+      overflow: visible;
       right: -20%;
       color: rgba(10, 3, 43,0);
     }
     100%{
+      overflow: visible;
       right: 0%;
       color: rgba(10, 3, 43,1);
     }
@@ -506,10 +490,10 @@ $dark-bg-text-fill: rgba(48, 71, 94,0.05);
 
     .resume {
       overflow-y: scroll;
-      margin-bottom: 2rem;
     }
 
     .resume-height {
+      overflow-y: scroll;
       height: 100vh !important;
     }
   
