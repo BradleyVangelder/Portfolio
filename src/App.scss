@@ -67,8 +67,6 @@ html,body, #root, .App, .content {
     overflow: hidden;
     display: block;
     margin-top: 1rem;
-    border-top: .1rem solid rgba(10, 3, 43,0);
-    border-bottom: .1rem solid rgba(10, 3, 43,0);
     color: rgba(117, 49, 85, 0);
     width: 100%;
     text-align: center;
@@ -82,9 +80,6 @@ html,body, #root, .App, .content {
   
   .overlap {
     z-index: 1000;
-    margin-top: 1rem;
-    border-top: .1rem solid #fff;
-    border-bottom: .1rem solid #000;
   }
   
   .loop_text {
@@ -96,6 +91,7 @@ html,body, #root, .App, .content {
     transform: translate(0, -50%);
     animation-name: words;
     animation-timing-function: linear;
+    animation-delay: 3.5s;
     animation-duration: 20s;
     animation-iteration-count: infinite;
   }
@@ -199,7 +195,10 @@ html,body, #root, .App, .content {
   }
 
   .resume {
-    transform: translate(0, 0) !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: translate(0, 12%) !important;
     width: 100% !important;
     overflow: visible !important;
 
@@ -227,11 +226,11 @@ html,body, #root, .App, .content {
   }
   
   .container_modal {
-    width: 50%;
-    max-width: 100%;
-    position: relative;
-    transform: translate(0, 50%);
-    background-color: rgba(235, 235, 235, 0);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
     color: rgba(10, 3, 43,0);
     padding: 1rem;
     z-index: 600;
@@ -244,7 +243,7 @@ html,body, #root, .App, .content {
     font-weight: 800;
     font-size: 2.5rem;
     left: -3%;
-    animation-name: slide_left_container;
+    animation-name: animation_container;
     animation-duration: .8s;
     animation-delay: .8s;
     animation-timing-function: ease-in-out;
@@ -253,7 +252,13 @@ html,body, #root, .App, .content {
   
   .container_modal p {
     position: relative;
-    max-width: 65%;
+    max-width: 35%;
+    color: rgba(10, 3, 43,0);
+    animation-name: animation_container;
+    animation-duration: .8s;
+    animation-delay: .8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
     z-index: 500;
   }
 
@@ -282,15 +287,11 @@ html,body, #root, .App, .content {
     bottom: 0;
     left: 0;
     transition: all 0.5s;
-    animation-name: slide_left_button;
+    animation-name: animation_button;
     animation-duration: .8s;
     animation-delay: .8s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-  }
-
-  .text {
-    z-index: 120;
   }
   
   .container_modal .icons {
@@ -306,7 +307,7 @@ html,body, #root, .App, .content {
     font-size: 1.4rem;
     margin-right: 1.2rem;
     color: rgba(10, 3, 43,0);
-    animation-name: slide_left_container;
+    animation-name: animation_container;
     animation-duration: .8s;
     animation-delay: .8s;
     animation-timing-function: ease-in-out;
@@ -351,8 +352,8 @@ html,body, #root, .App, .content {
     display: none;
   }
   
-  .slide_left_container {
-    animation-name: slide_left_container;
+  .animation_container {
+    animation-name: animation_container;
     animation-duration: .8s;
     animation-delay: .8s;
     animation-timing-function: ease-in-out;
@@ -422,15 +423,11 @@ html,body, #root, .App, .content {
     }
   }
   
-  @keyframes slide_left_container {
+  @keyframes animation_container {
     0%{
-      overflow: visible;
-      right: -20%;
       color: rgba(10, 3, 43,0);
     }
     100%{
-      overflow: visible;
-      right: 0%;
       color: rgba(10, 3, 43,1);
     }
   }
@@ -447,16 +444,14 @@ html,body, #root, .App, .content {
   }
   
   
-  @keyframes slide_left_button {
+  @keyframes animation_button {
     0%{
       color: rgba(10, 3, 43,0);
       background-color: rgba(246, 126, 125,0);
-      right: -30%;
     }
     100%{
       color: rgba(10, 3, 43,1);
       background-color: rgba(246, 126, 125,1);
-      right: -20%;
     }
   }
   
@@ -484,10 +479,10 @@ html,body, #root, .App, .content {
   
   @keyframes words {
     from {
-      transform: translateX(+120%);
+      transform: translateX(+80%);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(-80%);
     }
   }
   
@@ -495,7 +490,7 @@ html,body, #root, .App, .content {
     .App {
       font-family: 'Open Sans', sans-serif;
       background-color: #ffb997;
-      max-width: 100%;
+      max-width: 100% !important;
       position: relative;
       overflow: hidden;
     }
@@ -504,7 +499,15 @@ html,body, #root, .App, .content {
       display: none;
     }
 
+    .resume {
+      position: relative !important;
+      top: 40% !important;
+      left: 50% !important;
+      transform: translate(0, 0) !important;
+    }
+
     .resume-height {
+      position: relative;
       overflow-y: scroll;
       height: 100vh;
     }
@@ -512,9 +515,18 @@ html,body, #root, .App, .content {
     .container_modal {
       width: 90%;
       padding-bottom: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -25%) !important;
+    }
+
+    .nav ul {
+      font-size: 1.4rem;
     }
   
     .container_modal h3 {
+      font-size: 2rem;
       position: relative;
       top: 0;
       left: 0;
@@ -522,6 +534,11 @@ html,body, #root, .App, .content {
   
     .container_modal p {
       max-width: 90%;
+      font-size: 0.7rem;
+    }
+
+    .container_modal a {
+      font-size: 1.2rem;
     }
   
     .container_modal img {
@@ -541,22 +558,35 @@ html,body, #root, .App, .content {
     .App {
       font-family: 'Open Sans', sans-serif;
       background-color: #ffb997;
-      max-width: 100%;
+      max-width: 100% !important;
       position: relative;
+      overflow: hidden;
     }
 
     .lines {
       display: none;
     }
 
+    .resume {
+      position: relative !important;
+      top: 25% !important;
+      left: 50% !important;
+      transform: translate(0, 0) !important;
+    }
+
     .resume-height {
+      position: relative;
       overflow-y: scroll;
+      height: 100vh;
     }
   
     .container_modal {
-      margin-bottom: 2rem;
-      height: auto;
       width: 90%;
+      padding-bottom: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -25%) !important;
     }
   
     .container_modal h3 {
@@ -570,10 +600,6 @@ html,body, #root, .App, .content {
     }
   
     .container_modal img {
-      display: none;
-    }
-  
-    .nightmode span {
       display: none;
     }
 
