@@ -506,14 +506,15 @@ html,body, #root, .App, .content {
 
     .resume {
       overflow-y: scroll;
+      margin-bottom: 5rem;
     }
 
     .resume-height {
       overflow-y: scroll;
+      height: 100vh;
     }
   
     .container_modal {
-      margin-bottom: 2rem;
       height: auto;
       width: 90%;
     }
