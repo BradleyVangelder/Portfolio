@@ -504,19 +504,13 @@ html,body, #root, .App, .content {
       display: none;
     }
 
-    .resume {
-      overflow-y: scroll;
-      margin-bottom: 5rem;
-    }
-
     .resume-height {
       overflow-y: scroll;
-      height: 100vh;
     }
   
     .container_modal {
-      height: auto;
       width: 90%;
+      margin-bottom: 5rem;
     }
   
     .container_modal h3 {
@@ -530,10 +524,6 @@ html,body, #root, .App, .content {
     }
   
     .container_modal img {
-      display: none;
-    }
-  
-    .nightmode span {
       display: none;
     }
 
