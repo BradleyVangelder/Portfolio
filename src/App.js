@@ -36,7 +36,7 @@ function App() {
 
         <div className={show === 'about' ? 'slide_left_container container_modal container': 'none'}>
           <h3>About</h3>
-          <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. In my free time i like to workout, play guitar, level my self up in graphic design and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
+          <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge, play guitar and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
           <p className="back" onClick={() => setShow('close')}>
             <span className="material-icons">
               west
@@ -76,23 +76,27 @@ function App() {
             <div className="row">
               <div className="col-lg-6 col-sm-12">
                 <p className="title_resume">Education</p>
-                <p>TECHNISCH HEILIG HARTINSTITUUT Multi-Media | June 2018 - 2019</p>
-                <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.</p>
-                <p>THOMAS MORE KEMPEN ApplicationDevelopment | 2019</p>
-                <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.</p>
+                <p className="title_project">TECHNISCH HEILIG HARTINSTITUUT Multi-Media | June 2018 - 2019</p>
+                <p className="short_description">In this education I got a broad package of courses for graphic design and physical drawing to web design. During that time I developed a feel for the colors and personal designing style (minimalistic).</p>
+                <p className="title_project">THOMAS MORE KEMPEN ApplicationDevelopment | 2019</p>
+                <p className="short_description">Still going on...</p>
               </div>
               <div className="col-lg-6 col-sm-12">
                 <p className="title_resume">Projects</p>
-                <p>STAATLICHE MUSEEN ZU BERLIN
+                <p className="title_project">STAATLICHE MUSEEN ZU BERLIN
                 graphic design: Photographic Memories – Nubia around 1900 | 2019</p>
-                <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.</p>
-                <p>LUANA LOUNGE
+                <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work with a client's standard but still bring my actual touch to the work.</p>
+                <p><a href="https://www.behance.net/gallery/113646773/Poster-design-Neues-museum">LINK TO PROJECT</a></p>
+                
+                <p className="title_project">LUANA LOUNGE
                 graphic design: company branding | 2019</p>
-                <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work to a client's standards but still bring my actual touch to the work.
-                </p>
+                <p className="short_description">
+                During my last year in my previous education I made a full branding on a non existing company.
+                In the process of making the branding I developed myself in the culture of beach bars from all over the world. I made close to 150 sketches and finally came to a result I am very pleased with. In the logo you find a more Beachy style with the sun and palm leaf outlining, but still it still keeps the minimalistic look.</p>
                 <p><a href="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a></p>
-                <p>SNACK BAR FRITZ Studentjob</p>
-                <p className="short_description">For my student job I work at least 3 times during the week combined with the school work that comes with it. I work in the hospitality industry so I am among people a lot, which also makes me social and that I can deal well with people/customers. In this I learn that I have to be friendly at all times and I am faced with a lot of time pressure in this profession.</p>
+                <p className="title_project">STAR WARS WIKI - Reactjs / HTML / Bootstrap</p>
+                <p className="short_description">As a movie enthusiast is decided to make a SW wiki during my learning Reactjs learning process. While making the app I developed a knowledge about functional programming in React, React hooks and fetch calls.</p>
+                <p><a href="https://github.com/BradleyVangelder/StarWarsWiki">LINK TO PROJECT</a></p>
               </div>
             </div>
             <p className="back" onClick={() => setShow('close')}>

@@ -531,8 +531,18 @@ html,body, #root, .App, .content {
       top: 0;
       left: 0;
     }
-  
+
+    .container_modal .title_project {
+      max-width: 90%;
+      font-size: 1rem;
+    }
+
     .container_modal p {
+      max-width: 90%;
+      font-size: 0.8rem;
+    }
+  
+    .container_modal .short_description {
       max-width: 90%;
       font-size: 0.7rem;
     }
