@@ -36,7 +36,7 @@ function App() {
 
         <div className={show === 'about' ? 'slide_left_container container_modal container': 'none'}>
           <h3>About</h3>
-          <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge, play guitar and get just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
+          <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge, play guitar and just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
           <p className="back" onClick={() => setShow('close')}>
             <span className="material-icons">
               west
