@@ -24,11 +24,11 @@ html,body, #root, .App, .content {
 }
 
 main {
-  height: 80%;
+  height: auto;
 }
 
 nav {
-  height: 20%;
+  height: auto;
 }
 
   .nav_top {
@@ -72,7 +72,7 @@ nav {
   .lines{
     overflow: hidden;
     display: block;
-    margin-top: 3rem;
+    margin-top: .7rem;
     color: rgba(117, 49, 85, 0);
     width: 100%;
     text-align: center;
@@ -199,7 +199,7 @@ nav {
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
-    transform: translate(0, 12%) !important;
+    transform: translate(0, 0) !important;
     width: 100% !important;
     overflow: visible !important;
 
@@ -498,7 +498,11 @@ nav {
     }
 
     nav {
-      height: 10%;
+      height: 5%;
+    }
+    
+    main {
+      height: auto;
     }
 
     .lines {
@@ -589,6 +593,14 @@ nav {
 
     .lines {
       display: none;
+    }
+
+    nav {
+      height: 10%;
+    }
+    
+    main {
+      height: auto;
     }
 
     .nav_top {
