@@ -19,19 +19,27 @@ html,body, #root, .App, .content {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffb997;
   max-width: 100%;
-  //height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
+main {
+  height: 80%;
+}
+
+nav {
+  height: 20%;
+}
+
   .nav_top {
     height: 5%;
-    position: relative;
+    display: block;
+    background-color: #ffb997;
+    width: 100%;
   }
   
   .nav_name {
     cursor: pointer;
-    display: inline-block;
     color: rgba(10, 3, 43,0);
     letter-spacing: -.15;
     animation-name: slide;
@@ -39,8 +47,6 @@ html,body, #root, .App, .content {
     animation-duration: .8s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    background-color: #ffb997;
-    width: 100%;
   }
   
   h2 {
@@ -66,7 +72,7 @@ html,body, #root, .App, .content {
   .lines{
     overflow: hidden;
     display: block;
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: rgba(117, 49, 85, 0);
     width: 100%;
     text-align: center;
@@ -187,11 +193,6 @@ html,body, #root, .App, .content {
     animation-fill-mode: forwards;
     max-width: 100%;
     height: auto;
-  }
-
-  .resume-height {
-    overflow-x: visible;
-    width: 100%;
   }
 
   .resume {
@@ -366,6 +367,7 @@ html,body, #root, .App, .content {
     overflow: visible;
     position: relative;
     min-height: 100vh;
+    display: block;
   }
   
   @keyframes animation {
@@ -495,6 +497,10 @@ html,body, #root, .App, .content {
       overflow: hidden;
     }
 
+    nav {
+      height: auto;
+    }
+
     .lines {
       display: none;
     }
@@ -504,17 +510,27 @@ html,body, #root, .App, .content {
       top: 40% !important;
       left: 50% !important;
       transform: translate(0, 0) !important;
+      display: block;
     }
 
     .resume-height {
       position: relative;
       overflow-y: scroll;
       height: 100vh;
+      display: block;
+    }
+
+    .nav_name {
+      display: block !important;
+    }
+
+    .nav_top {
+      height: 3rem;
     }
   
     .container_modal {
+      padding-bottom: 5rem;
       width: 90%;
-      padding-bottom: 10rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -528,8 +544,6 @@ html,body, #root, .App, .content {
     .container_modal h3 {
       font-size: 2rem;
       position: relative;
-      top: 0;
-      left: 0;
     }
 
     .container_modal .title_project {
@@ -577,22 +591,28 @@ html,body, #root, .App, .content {
       display: none;
     }
 
+    .nav_top {
+      display: block !important;
+      height: 4rem;
+    }
+
     .resume {
       position: relative !important;
       top: 25% !important;
       left: 50% !important;
       transform: translate(0, 0) !important;
+      display: block !important;
     }
 
     .resume-height {
       position: relative;
       overflow-y: scroll;
       height: 100vh;
+      display: block !important;
     }
   
     .container_modal {
       width: 90%;
-      padding-bottom: 10rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -607,14 +627,6 @@ html,body, #root, .App, .content {
   
     .container_modal p {
       max-width: 90%;
-    }
-  
-    .container_modal img {
-      display: none;
-    }
-
-    .short_description {
-      display: none;
     }
 
     .footer {
