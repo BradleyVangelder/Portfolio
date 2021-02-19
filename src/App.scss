@@ -12,7 +12,7 @@ $dark-button-fill: #f2a365;
 $dark-bg-text-fill: rgba(48, 71, 94,0.05);
 
 html,body, #root, .App, .content {
-  height: 100%;
+  height: auto;
 }
 
 .App {
@@ -24,11 +24,11 @@ html,body, #root, .App, .content {
 }
 
 main {
-  height: 80%;
+  height: 85%;
 }
 
 nav {
-  height: 20%;
+  height: auto;
 }
 
   .nav_top {
@@ -72,7 +72,7 @@ nav {
   .lines{
     overflow: hidden;
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: rgba(117, 49, 85, 0);
     width: 100%;
     text-align: center;
@@ -199,7 +199,7 @@ nav {
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
-    transform: translate(0, 12%) !important;
+    transform: translate(0, 0) !important;
     width: 100% !important;
     overflow: visible !important;
 
@@ -501,16 +501,20 @@ nav {
       height: auto;
     }
 
+    main {
+      height: auto;
+    }
+
     .lines {
       display: none;
     }
 
     .resume {
       position: relative !important;
-      top: 40% !important;
+      top: 30% !important;
       left: 50% !important;
-      transform: translate(0, 0) !important;
       display: block;
+      padding-top: 4rem;
     }
 
     .resume-height {
