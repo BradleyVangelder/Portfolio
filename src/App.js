@@ -45,7 +45,7 @@ function App() {
               <p className='mr-5 d-md-none d-lg-block'><img src={Image} alt="" className='rounded-circle'/></p>
               <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge,read book, play guitar and just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
             </div>
-            <p><a href="https://kwotet.com/" target='blank' >My Resume</a> <a href={PDF} download>Download my resume</a></p>
+            <p><a href="https://bradley.sinners.be/assets/CV.pdf" target='blank' >My Resume</a> <a href={PDF} download>Download my resume</a></p>
             <p className="back" onClick={() => setShow('close')}>
               <span className="material-icons">
                 west
