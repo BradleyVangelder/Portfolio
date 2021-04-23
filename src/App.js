@@ -41,7 +41,7 @@ function App() {
 
           <div className={show === 'about' ? 'slide_left_container container_modal container': 'none'}>
             <h3>About</h3>
-            <div className='row'>
+            <div className='row my-lg-4 my-md-0'>
               <p className='mr-5 d-md-none d-lg-block'><img src={Image} alt="" className='rounded-circle'/></p>
               <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge,read book, play guitar and just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
             </div>
@@ -102,6 +102,10 @@ function App() {
                   <p className="title_project">Kwotet - Entrepreneurship</p>
                   <p className="short_description">This is project that I started on my own and have now found a partner to collaborate on developing this idea.</p>
                   <p><a href="https://kwotet.com/" target='blank'>LINK TO PROJECT</a></p>
+
+                  <p className="title_project">Trainingsessions - PHP / Laravel</p>
+                  <p className="short_description">The main goal of this web application is to make the management of the training sessions easier for the coordinator. The coordinator should be able to receive and manage all the info in a central place. Furthermore, students, teachers and organizations are also related to the system. However, these groups do not benefit from using this system. This is a group work where everyone has been given the same amount of tasks.</p>
+                  <p><a href="https://dda.sinners.be/" target='blank'>LINK TO PROJECT</a></p>
                 </div>
               </div>
               <p className="back" onClick={() => setShow('close')}>
