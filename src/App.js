@@ -78,28 +78,24 @@ function App() {
               <h3>Resume</h3>
               <div className="row">
                 <div className="col-lg-6 col-sm-12">
-                  <p className="title_resume">Education</p>
-                  <p className="title_project">TECHNISCH HEILIG HARTINSTITUUT Multi-Media | June 2018 - 2019</p>
-                  <p className="short_description">In this education I got a broad package of courses for graphic design and physical drawing to web design. During that time I developed a feel for the colors and personal designing style (minimalistic).</p>
-                  <p className="title_project">THOMAS MORE KEMPEN ApplicationDevelopment | 2019</p>
-                  <p className="short_description">Still going on...</p>
-                </div>
-                <div className="col-lg-6 col-sm-12">
                   <p className="title_resume">Projects</p>
-                  <p className="title_project">STAATLICHE MUSEEN ZU BERLIN
-                  graphic design: Photographic Memories – Nubia around 1900 | 2019</p>
-                  <p className="short_description">In my previous education, I gained experience by going on a foreign internship in Berlin for 3 weeks. During this project, I created the marketing and graphic design around an event they would be hosting in Spring 2021. Eventually I learned to work in group, a local graphic design team, also I learned to work with a client's standard but still bring my actual touch to the work.</p>
-                  <p><a href="https://www.behance.net/gallery/113646773/Poster-design-Neues-museum">LINK TO PROJECT</a></p>
+                  <p className="title_project">Frituur Fritz app - HTML / Jquery / SASS / Cordova</p>
+                  <p className="short_description">Deze app heb ik gemaakt voor de frituur waar ik werk in kader van het vak Cordova. Ik heb dit allemaal kunnen realiseren door een backend te bouwen met PHP en de frontend met Jquery HTML en CSS. In dit project heb ik veel bijgeleerd over backend programming en database structuren en dit zal mij nog heel lang bijblijven.</p>
+                  <p><a href="https://bradley.sinners.be/cordova/" target='blank'>LINK TO PROJECT</a></p>
                   
-                  <p className="title_project">LUANA LOUNGE
-                  graphic design: company branding | 2019</p>
+                  <p className="title_project">Requirement Analysis - UML / StarUML / Axure</p>
                   <p className="short_description">
-                  During my last year in my previous education I made a full branding on a non existing company.
-                  In the process of making the branding I developed myself in the culture of beach bars from all over the world. I made close to 150 sketches and finally came to a result I am very pleased with. In the logo you find a more Beachy style with the sun and palm leaf outlining, but still it still keeps the minimalistic look.</p>
-                  <p><a href="https://www.behance.net/gallery/113252385/Luana-Lounge-Branding">LINK TO PROJECT</a></p>
+                  Voor het van Requirement Analysis hebben wij een eisen analyse rapport moeten samenstellen voor een fictieve klant. Door heen het proces hebben wij alle kanttekeningen van de applicatie uitgewerkt in ons rapport. Dit ging dan van UC beschrijvingen tot UC diagrammen. Tijdens dit project heb ik een actieve rol gespeeld en heb ik zo veel mogelijk mijn team proberen te pushen voor een zo goed mogelijk resultaat te verkrijgen.</p>
+                  <p><a href="https://bradley.sinners.be/assets/RA_BradleyVangelder_DDA.pdf" target='blank'>LINK TO PROJECT</a></p>
                   <p className="title_project">STAR WARS WIKI - Reactjs / HTML / Bootstrap</p>
                   <p className="short_description">As a movie enthusiast is decided to make a SW wiki during my learning Reactjs learning process. While making the app I developed a knowledge about functional programming in React, React hooks and fetch calls.</p>
-                  <p><a href="https://github.com/BradleyVangelder/StarWarsWiki">LINK TO PROJECT</a></p>
+                  <p><a href="https://swwiki.vercel.app/" target='blank'>LINK TO PROJECT</a></p>
+                </div>
+
+                <div className="col-lg-6 col-sm-12">
+                  <p className="title_project">Kwotet - Entrepreneurship</p>
+                  <p className="short_description">Dit is project dat ik alleen ben begonnen en nu een partner heb gevonden die samen meewerkt aan de uitwerking van dit idee.</p>
+                  <p><a href="https://kwotet.com/" target='blank'>LINK TO PROJECT</a></p>
                 </div>
               </div>
               <p className="back" onClick={() => setShow('close')}>
