@@ -23,6 +23,12 @@ html,body, #root, .App, .content {
   position: relative;
 }
 
+a{
+  font-size: .9rem !important;
+  text-decoration: underline;
+  color: rgba(10, 3, 43,0);
+}
+
 main {
   height: auto;
 }
@@ -236,6 +242,17 @@ nav {
     padding: 1rem;
     z-index: 600;
   }
+
+  .container_modal img{
+    width: 12rem;
+    visibility: hidden;
+    animation-name: picture;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
   
   .container_modal h3 {
     position: relative;
@@ -261,20 +278,6 @@ nav {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     z-index: 500;
-  }
-
-  .container_modal img {
-    position: absolute;
-    right: -20%;
-    max-width: 75%;
-    bottom: -50%;
-    z-index: 1;
-    visibility: hidden;
-    animation-name: slide_left_picture;
-    animation-duration: .8s;
-    animation-delay: .8s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
   }
   
   .container_modal .back {
@@ -434,14 +437,12 @@ nav {
     }
   }
   
-  @keyframes slide_left_picture {
+  @keyframes picture {
     0%{
       visibility: hidden;
-      right: -30%;
     }
     100%{
       visibility: visible;
-      right: -20%;
     }
   }
   

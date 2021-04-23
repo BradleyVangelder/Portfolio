@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
+import Image from './pictures/me.jpg'
+import PDF from './pictures/CV.pdf'
 
 function App() {
 
@@ -39,7 +41,11 @@ function App() {
 
           <div className={show === 'about' ? 'slide_left_container container_modal container': 'none'}>
             <h3>About</h3>
-            <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge, play guitar and just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
+            <div className='row'>
+              <p className='mr-5 d-md-none d-lg-block'><img src={Image} alt="" className='rounded-circle'/></p>
+              <p>I'm Bradley Vangelder, 19 Years, student at Thomas More Geel. A passionate developer and a big movie enthusiast. In my free time I like to broaden my programming knowledge,read book, play guitar and just get some personal projects done. I'm a really social person and love to work in group to expand my contact portfolio.</p>
+            </div>
+            <p><a href="https://kwotet.com/" target='blank' >My Resume</a> <a href={PDF} download>Download my resume</a></p>
             <p className="back" onClick={() => setShow('close')}>
               <span className="material-icons">
                 west
@@ -80,12 +86,12 @@ function App() {
                 <div className="col-lg-6 col-sm-12">
                   <p className="title_resume">Projects</p>
                   <p className="title_project">Frituur Fritz app - HTML / Jquery / SASS / Cordova</p>
-                  <p className="short_description">Deze app heb ik gemaakt voor de frituur waar ik werk in kader van het vak Cordova. Ik heb dit allemaal kunnen realiseren door een backend te bouwen met PHP en de frontend met Jquery HTML en CSS. In dit project heb ik veel bijgeleerd over backend programming en database structuren en dit zal mij nog heel lang bijblijven.</p>
+                  <p className="short_description">I created this app for the fries shop where I work as part of the Cordova course. I was able to realize all this by building a backend with PHP and the frontend with Jquery HTML and CSS. In this project I learned a lot about backend programming and database structures and this will stay with me for a long time.</p>
                   <p><a href="https://bradley.sinners.be/cordova/" target='blank'>LINK TO PROJECT</a></p>
                   
                   <p className="title_project">Requirement Analysis - UML / StarUML / Axure</p>
                   <p className="short_description">
-                  Voor het van Requirement Analysis hebben wij een eisen analyse rapport moeten samenstellen voor een fictieve klant. Door heen het proces hebben wij alle kanttekeningen van de applicatie uitgewerkt in ons rapport. Dit ging dan van UC beschrijvingen tot UC diagrammen. Tijdens dit project heb ik een actieve rol gespeeld en heb ik zo veel mogelijk mijn team proberen te pushen voor een zo goed mogelijk resultaat te verkrijgen.</p>
+                  For Requirement Analysis we had to compile a requirements analysis report for a fictitious customer. Throughout the process, we worked out all the aspects of the application in our report. This went from UC descriptions to UC diagrams. During this project I played an active role and tried to push my team as much as possible to get the best possible result.</p>
                   <p><a href="https://bradley.sinners.be/assets/RA_BradleyVangelder_DDA.pdf" target='blank'>LINK TO PROJECT</a></p>
                   <p className="title_project">STAR WARS WIKI - Reactjs / HTML / Bootstrap</p>
                   <p className="short_description">As a movie enthusiast is decided to make a SW wiki during my learning Reactjs learning process. While making the app I developed a knowledge about functional programming in React, React hooks and fetch calls.</p>
@@ -94,7 +100,7 @@ function App() {
 
                 <div className="col-lg-6 col-sm-12">
                   <p className="title_project">Kwotet - Entrepreneurship</p>
-                  <p className="short_description">Dit is project dat ik alleen ben begonnen en nu een partner heb gevonden die samen meewerkt aan de uitwerking van dit idee.</p>
+                  <p className="short_description">This is project that I started on my own and have now found a partner to collaborate on developing this idea.</p>
                   <p><a href="https://kwotet.com/" target='blank'>LINK TO PROJECT</a></p>
                 </div>
               </div>
